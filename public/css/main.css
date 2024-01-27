@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #243447;
+    color: #fff;
+}
+
+p {margin: 0; padding: 0;}
+
+nav {
+    background-color: rgba(20,29,38, 0.8); 
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.navbar {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+}
+
+ul.navs {
+    display: flex;
+    gap: 5em;
+    list-style: none;
+}
+li.nav-link > a {
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+    color: white;
+}
+
+li.nav-link > a:hover {
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+.btn {
+    width: 10rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: #c51f5d;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #8b1641;
+    color: #c2bfbf;
+}
+
+main.container {
+    max-width: 800px;
+    height: 66vh;
+    margin: auto;
+    padding: 2rem;
+}
+
+.post {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post textarea {
+    font-size: 20px;
+    height: 10rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    padding: 2rem;
+}
+
+article {
+    padding: 1rem;
+    max-height: 10rem;
+    border-top: 0.1rem solid #c51f5d;
+}
+
+article a p {
+    color: #fff;
+    display: inline-block;
+}
+
+article p {
+    height: 5rem;
+    overflow: hidden;
+}
+
+ul.content {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 1rem;
+    justify-content: end;
+}
+
+
+footer {
+    background-color: rgba(20,29,38, 0.8); 
+    height: 20vh;
+    top: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option a {
+    color: #fff;
+}

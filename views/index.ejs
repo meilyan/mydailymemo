@@ -1,0 +1,32 @@
+<%- include("part/header.ejs") %>
+
+<header class="container">
+  <div class="post">
+    <form action="/post" method="POST">
+      <textarea name="curhat" cols="30" maxlength="200"></textarea>
+
+      <button class="btn" type="submit">POST</button>
+    </form>
+  </div>
+</header>
+
+<main class="container">
+
+  <% for ( var i = 0; i < post.length; i++) { %>
+    <article>
+      <a href="post/<%= i %>">
+        <p>
+          <%= post[i]; %>
+        </p>
+      </a>
+      <ul class="content">
+        <li class="option"><a href="delete/<%= i %>" class="bi bi-trash"></a></li>
+        <li class="option"><i class="bi bi-star"></i></li>
+        <li class="option"><i class="bi bi-arrow-return-left"></i></li>
+        <li class="option left"><%= date[i] %></li>
+      </ul>
+    </article>
+  <% } %> 
+</main>
+
+<%- include("part/footer.ejs") %>
